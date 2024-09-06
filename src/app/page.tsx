@@ -2,15 +2,11 @@ export default function Home() {
   return (
     <main className="p-20 max-w-screen-xl mx-auto flex flex-col gap-5">
       <p>Noor Mohammad</p>
+      <p>Md. Abdur Rahim </p>
       <p>Changes from test</p>
-      <p>Another Changes from test</p>
-<<<<<<< HEAD
       <p>Nazmul Islam</p>
       <p>Fahim Sheikh</p>
-
-=======
       <h1>Md Golam Sarowar 2.0</h1>
->>>>>>> 351fe595dcf6b4d095af613d91adab5650d90d52
       <h1 className="text-2xl font-bold font-titleFont">
         Lorem ipsum dolor sit amet.
       </h1>
