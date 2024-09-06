@@ -2,7 +2,8 @@ export default function Home() {
   return (
     <main className="p-20 max-w-screen-xl mx-auto flex flex-col gap-5">
       <p>Noor Mohammad</p>
-      <p>Changes from test</p>
+      <p>Nazmul Islam </p>
+      
       <p>Another Changes from test</p>
       <h1 className="text-2xl font-bold font-titleFont">
         Lorem ipsum dolor sit amet.
@@ -22,7 +23,7 @@ export default function Home() {
         molestias, porro doloribus. Magni, deleniti ratione soluta autem nobis
         temporibus vel deserunt. Optio neque qui dolores consequatur nobis earum
         voluptatem recusandae, velit voluptates, iure, deleniti repellat
-        blanditiis officia? Commodi, dignissimos!
+        blanditiis officia? Commodi, dignissimos !
       </p>
     </main>
   );
