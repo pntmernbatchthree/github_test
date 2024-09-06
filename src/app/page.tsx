@@ -3,6 +3,8 @@ export default function Home() {
     <main className="p-20 max-w-screen-xl mx-auto flex flex-col gap-5">
       <p>Noor Mohammad</p>
       <h1>Md Golam Sarowar</h1>
+      <h1>Md Golam Sarowar 2.0</h1>
+      <h1>Md Golam Sarowar 3.0</h1>
       <h1 className="text-2xl font-bold font-titleFont">
         Lorem ipsum dolor sit amet.
       </h1>
