@@ -5,6 +5,7 @@ export default function Home() {
       <h1 className="text-2xl font-bold font-titleFont">
         Lorem ipsum dolor sit amet.
       </h1>
+      <h1>Jibon Roy</h1>
       <h2 className="text-xl font-semibold font-bodyFont">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
         assumenda labore et culpa, pariatur animi!
