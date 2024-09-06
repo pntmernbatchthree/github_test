@@ -4,6 +4,9 @@ export default function Home() {
       <p>Noor Mohammad</p>
       <p>Changes from test</p>
       <p>Another Changes from test</p>
+      <p>Nazmul Islam</p>
+      <p>Fahim Sheikh</p>
+
       <h1 className="text-2xl font-bold font-titleFont">
         Lorem ipsum dolor sit amet.
       </h1>
