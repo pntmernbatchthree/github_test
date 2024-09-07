@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import { Inter, Roboto_Mono } from "next/font/google";
 import "./globals.css";
+import { Toaster } from "react-hot-toast";
+import Layout from "@/components/Layout/Layout";
 
-const inter = Inter({ subsets: ["latin"] });
-const roboto = Roboto_Mono({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const roboto = Roboto_Mono({ subsets: ["latin"], variable: "--font-roboto" });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,7 +19,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={`${inter.variable} ${roboto.variable}`}>
+        <Layout>
+          {children}
+          <Toaster position="top-center" reverseOrder={false} />
+        </Layout>
+      </body>
     </html>
   );
 }

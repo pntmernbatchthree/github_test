@@ -1,6 +1,9 @@
+import Link from "next/link"
+
 export default function Home() {
   return (
     <main className="p-20 max-w-screen-xl mx-auto flex flex-col gap-5">
+      <Link href={"/shahin"} className="text-3xl text-green-600 font-semibold"><h1>Shahin Alom | Todo App</h1></Link>
       <p>Noor Mohammad</p>
       <p>Changes from test</p>
       <p>Another Changes from test</p>
