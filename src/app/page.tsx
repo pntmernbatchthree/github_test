@@ -1,32 +1,19 @@
-export default function Home() {
+import InputForm from '@/components/InputForm'
+import { Metadata } from 'next';
+import React from 'react'
+
+export const metadata: Metadata = {
+  title: "Home | todo application",
+  description: "todo application",
+};
+const HomePage = () => {
   return (
-    <main className="p-20 max-w-screen-xl mx-auto flex flex-col gap-5">
-      <p>Noor Mohammad</p>
-      <p>Md. Abdur Rahim </p>
-      <p>Changes from test</p>
-      <p>Nazmul Islam</p>
-      <p>Fahim Sheikh</p>
-      <h1>Md Golam Sarowar 2.0</h1>
-      <h1 className="text-2xl font-bold font-titleFont">
-        Lorem ipsum dolor sit amet.
-      </h1>
-      <h2 className="text-xl font-semibold font-bodyFont">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
-        assumenda labore et culpa, pariatur animi!
-      </h2>
-      <h3 className="text-lg font-medium">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit hic quam
-        cumque ut. Iure minus itaque reiciendis earum praesentium officia iusto
-        aspernatur voluptatibus quibusdam blanditiis?
-      </h3>
-      <p className="text-base font-normal">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe nostrum
-        earum minus perferendis ad repellendus ex minima fugit, est iste
-        molestias, porro doloribus. Magni, deleniti ratione soluta autem nobis
-        temporibus vel deserunt. Optio neque qui dolores consequatur nobis earum
-        voluptatem recusandae, velit voluptates, iure, deleniti repellat
-        blanditiis officia? Commodi, dignissimos!
-      </p>
-    </main>
-  );
+    <div className='w-full min-h-screen flex flex-col items-center bg-gradient-to-r from-green-200 via-blue-200 to-blue-200 '>
+      <div className=' w-full max-w-screen-md mx-2 flex flex-col rounded-md gap-5 mt-4'>
+        <InputForm />
+      </div>
+    </div>
+  )
 }
+
+export default HomePage
