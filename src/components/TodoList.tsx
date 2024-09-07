@@ -23,7 +23,7 @@ const TodoList = () => {
           )}
       {todoList?.length === 0 && (
         <h3 className="text-yellow-200 text-lg text-center">
-        Your todo list Empty!
+        Your todo list Empty!!
         </h3>
       )}
     </div>
