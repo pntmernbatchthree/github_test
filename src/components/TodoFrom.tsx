@@ -1,7 +1,7 @@
 "use client"
 import Link from "next/link";
 import { useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { addTodo } from "./store/todoSlice";
 
 const TodoFrom = () => {
@@ -12,15 +12,18 @@ const TodoFrom = () => {
 
       const todoData = {name, email, number }
       // console.log("todoData", todoData)
-      const handlaSubmit = (e: any) => {
+      //@ts-ignore
+      const handlaSubmit = (e) => {
             e.preventDefault()
             dispatch(addTodo(todoData))
       }
+      const selector = useSelector((state) => state?.todo.todo)
+      console.log("selector", selector)
 
       return (
             <div className="bg-red-100 py-10">
                   <h1 className="text-4xl font-medium text-center"> Todo Application</h1>
-                  <div className="flex justify-center h-[400px]">
+                  <div className="flex justify-between h-[400px] px-20">
                         <form onSubmit={handlaSubmit} className="items-start mt-10">
                               <div className="flex flex-col gap-5">
                                     <input
@@ -51,7 +54,20 @@ const TodoFrom = () => {
                               </div>
                               <Link href={"/"}><h1 className="bg-orange-400 text-center mt-6 py-1 mx-48 text-white">Go To Home</h1></Link>
                         </form>
+                        <div>
+                 <div>
+                 {
+                  selector.map((item) => (
+                        <div>
+                              <h1>{item?.name}</h1>
+                        </div>
+                  ))
+                 }
+                 </div>
                   </div>
+                  </div>
+
+                  
             </div>
 
       );
